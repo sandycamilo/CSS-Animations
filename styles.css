@@ -16,6 +16,187 @@
     padding: 10px;
 }
 
+.hamburger1, .hamburger2, .hamburger3 {
+    position: relative;
+    left: 20px;
+    top: 20px;
+    width: 100px;
+    height: 100px;
+    border: solid;
+    border-width: 1px;
+    margin: 20px;
+}
+
+.hamburger1 > div {
+    width: 70px;
+    height: 10px;
+    background-color: black;
+    position: relative;
+}
+
+.hamburger1 > :nth-child(1){
+    top: 20px;
+    left: 15px;
+    transition: 200ms;
+}
+
+.hamburger1 > :nth-child(2){
+    top: 30px;
+    left: 15px;
+    transition: 200ms;
+} 
+
+.hamburger1 > :nth-child(3){
+    top: 40px;
+    left: 15px;
+    transition: 200ms;
+}
+
+.hamburger1:hover{
+    background-color: black;
+}
+  
+.hamburger1:hover > :nth-child(1){
+    position: relative;
+    top: 40px;
+    left: 15px;
+    background-color: white;
+    width: 70px;
+    height: 10px;
+    transform: rotate(45deg);
+}
+  
+.hamburger1:hover > :nth-child(2){
+    display: none;
+}
+
+.hamburger1:hover > :nth-child(3){
+    position: relative;
+    top: 30px;
+    left: 10px;
+    background-color: white;
+    width: 70px;
+    height: 10px;
+    transform: rotate(-45deg);
+}
+
+.hamburger2 > div {
+    width: 70px;
+    height: 10px;
+    background-color: black;
+    position: relative;
+}
+
+.hamburger2 > :nth-child(1){
+    top: 20px;
+    left: 15px;
+    transition: 200ms;
+}
+
+.hamburger2 > :nth-child(2){
+    top: 30px;
+    left: 15px;
+    transition: 200ms;
+} 
+
+.hamburger2 > :nth-child(3){
+    top: 40px;
+    left: 15px;
+    transition: 200ms;
+}
+
+.hamburger2:hover {
+    background-color: black;
+}
+
+.hamburger2:hover > div{
+    background-color: white;
+}
+
+.hamburger2:hover > div:first-child {
+    width: 7px;
+    height: 35px;
+    left: 27px;
+    top: 21px;
+    transform: rotate(45deg)
+}
+
+.hamburger2:hover > div:nth-child(2) {
+    width: 60px;
+    height: 7px;
+    top: 10px;
+    left: 21px;
+    transform:rotate(0);
+}
+
+.hamburger2:hover > div:last-child {
+    width: 7px;
+    height: 35px;
+    left: 29px;
+    top: 1px;
+    transform: rotate(-45deg);
+}
+
+.hamburger3 > div {
+    width: 70px;
+    height: 10px;
+    background-color: black;
+    position: relative;
+}
+
+.hamburger3 > :nth-child(1){
+    top: 20px;
+    left: 15px;
+    transition: 200ms;
+}
+
+.hamburger3> :nth-child(2){
+    top: 30px;
+    left: 15px;
+    transition: 200ms;
+} 
+
+.hamburger3 > :nth-child(3){
+    top: 40px;
+    left: 15px;
+    transition: 200ms;
+}
+
+.hamburger3:hover{
+    background-color: black;
+}
+
+.hamburger3:hover > div{
+    background-color: red;
+}
+
+.hamburger3:hover > :nth-child(1){
+    position: relative;
+    top: 25px;
+    left: 3px;
+    width: 60px;
+    transform: translate(20px, 15px) rotate(48deg);
+}
+
+.hamburger3:hover > :nth-child(2){
+    position: relative;
+    top: -10px;
+    left: 5px;
+    width: 60px;
+    height: 60px;
+    border: 10px solid red;
+    border-radius: 50%;
+    background-color: transparent;
+    transform: translate(10px, 10px) rotate(0deg);
+}
+
+.hamburger3:hover > :nth-child(3){
+    position: relative;
+    top: -69px;
+    width: 60px;
+    transform: translate(20px, 15px) rotate(-45deg);
+}
+
 .jellies {
     display: flex;
     width: 450px;
@@ -120,4 +301,19 @@
     right: -200px;
 }
 
+.jelly > h2 {
+    position: absolute;
+    background-color: red;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 1rem 2rem;
+    left: -20px;
+    top: 0;
+    clip-path: circle(50% at 50% 50%);
+    transform: translate(-100px,-100px) scale(0.5);
+    transition: 400ms;
+    transition-delay: 100ms; 
+    transition-timing-function: ease-in-out;}
 
+.jelly:hover > h2 {
+    transform: translate(-5px,-5px) scale(1);
+}
